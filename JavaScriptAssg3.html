@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <script>
+            function fun(){
+                var a = document.getElementById("demo").value;
+                
+                if(!isNaN(a))
+                {
+                    a=(a-32)*5/9;
+                    document.write(a);
+                    document.write(" in fahrenheit");
+                }
+                else
+                {
+                    document.write("please enter a number:");
+                }
+
+            }
+    
+            </script>
+            <b>Enter a value:</b><input type="text" id="demo"><br>
+            <input type="submit" value="show results" onclick = "fun()">
+    </body>
+</html>
